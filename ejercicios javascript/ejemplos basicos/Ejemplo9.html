@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>saludo</title>
+</head>
+<body>
+    <h1>saludo</h1>
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombreInput">
+    <button onclick="mostrarSaludo()">Saludar</button>
+    <script>
+        function mostrarSaludo() {
+            // capturando el valor del input
+            var nombre = document.getElementById("nombreInput").value
+            //veridicando si se ingeso el nombre
+            if (nombre) {
+                //mostrando saludo
+                alert  ("¡hola " + nombre + "! Bienvenido")
+            }
+            else {
+                // si no se ingreso nada
+                alert ("Por Favor, Ingrese su Nombre")
+            }
+        }
+    </script>
+</body>
+</html>
